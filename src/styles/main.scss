@@ -1,0 +1,27 @@
+@import 'base';
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #fff !important;
+  // -webkit-overflow-scrolling: touch;
+  // overflow-scrolling: touch;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  -webkit-overflow-scrolling: touch;
+  // -webkit-backface-visibility: hidden;
+  // -webkit-transform: translate3d(0,0,0);
+}
+

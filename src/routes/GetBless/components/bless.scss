@@ -1,0 +1,194 @@
+.bless-container {
+  height: 100%;
+  overflow: auto;
+  background: #6F0800;
+  position: relative;
+}
+
+.bless-side {
+  // height: 1000px;
+  img {
+    display: block;
+  }
+  .more-get {
+    color: #FFCB85;
+    text-align: center;
+  }
+  .red-envelopes-btn {
+    display: block;
+    width: 70%;
+    height: 40px;
+    background: rgba(236, 54, 39, 1);
+    border-radius: 22px;
+    margin: auto;
+    border: none;
+    color: #FFEBCF;
+    font-size: 16px;
+  }
+  .red-envelopes-btn:active {
+    opacity: 0.8;
+  }
+  .yes-chai {
+    background-color: #864742;
+  }
+}
+
+.wufu-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  padding: 0 10px;
+  min-height: 80px;
+  .list {
+    width: 20%;
+    padding: 0 3px;
+    position: relative;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  span {
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: rgba(255, 203, 133, 1);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    color: #A40D00;
+    right: 5%;
+    top: 0;
+  }
+}
+.draw-container{
+  width: 100%;
+  position: relative;
+  min-height: 250px;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  .thf-img{
+    width: 60%;
+    margin: auto;
+  }
+  p{
+    text-align: center;
+    color: #FFEBCF;
+    line-height: 1.5;
+  }
+  .count{
+    position: absolute;
+    right: 5%;top: 0;
+    width: 40px;
+    span{
+      display: block;
+      width:100%;
+      height:20px;
+      background:rgba(186,22,28,1);
+      border-radius:21px;
+      text-align: center;
+      line-height: 20px;
+      color: #FFEBCF;
+    }
+    img{
+      margin-top: 10px;
+    }
+  }
+}
+.get-bless-mask-container{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  .mask{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    position: absolute;
+    z-index: 0;
+  }
+  .mask-body{
+    width: 240px;
+    // height:;
+    min-height: 240px ;
+    // background: #ccc;
+    position: absolute;
+    top:20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+  }
+  img{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .money{
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    span{
+      font-size: 15px;
+    }
+  }
+  button{
+    display: block;
+    width: 80%;
+    height: 35px;
+    background:#FFCB85;
+    border-radius:20px;
+    border:none;
+    margin: auto;
+    position: absolute;
+    bottom:50px;
+    left: 0;
+    right: 0;
+    color: #EC3627;
+    font-size: 16px;
+  }
+  button:active{
+    opacity: 0.8;
+  }
+}
+.bless-result{
+  width: 92%;
+  margin: auto;
+  // background-size:contain;
+  padding: 50px 0;
+  margin-bottom: 10px;
+  p{
+    text-align: center;
+    color: #FFCB85;
+    padding: 40px 0;
+  }
+  p:nth-child(1){
+    font-size: 20px;
+  }
+  p:last-child{
+    opacity: 0.5;
+  }
+  h2{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    span{
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+}

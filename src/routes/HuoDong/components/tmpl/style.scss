@@ -1,0 +1,56 @@
+.huohodng-modal{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 30;
+  .modal-body{
+    width: 270px;
+    background: #fff;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    margin: auto;
+    text-align: center;
+  }
+  h2{
+    font-weight: normal;
+    padding: 20px;
+    font-size:18px;
+  }
+  img{
+    // display: block;
+    width: 90px;
+    height: 40px;
+  }
+  input{
+    width: 90%;
+    height: 34px;
+    border:1px #ccc solid;
+    border-radius:3px;
+    margin: 10px auto; 
+  }
+  .modal-btn{
+    display: flex;
+    justify-content: center;
+    border-top: 1px #ccc solid;
+    width: 100%;
+    span{
+      display: block;
+      text-align: center;
+      width: 50%;
+      height: 50px;
+      line-height: 50px;
+      font-size: 18px;
+    }
+    span+span{
+      border-left: 1px #ccc solid;
+      color: #108ee9;
+    }
+  }
+}

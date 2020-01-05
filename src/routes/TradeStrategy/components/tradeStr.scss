@@ -1,0 +1,93 @@
+.trade-str-list {
+  width: 100%;
+  padding: 12px 10px;
+  .top {
+    overflow: hidden;
+    h4 {
+      font-size: 15px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 20px;
+      float: left;
+    }
+    h4+span {
+      float: left;
+      height: 20px;
+      line-height: 20px;
+      margin-left: 10px;
+    }
+    .red {
+      width: 40px;
+      height: 19px;
+      background: #FCE1DF;
+      // opacity: 0.15;
+      border-radius: 1px;
+      color: #EC3627;
+      text-align: center;
+    }
+    .green {
+      width: 40px;
+      height: 19px;
+      background: #DDEDDA;
+      // opacity: 0.15;
+      border-radius: 1px;
+      color: #188808;
+      text-align: center;
+    }
+    .time {
+      float: right;
+      font-size: 12px;
+      color: rgba(153, 153, 153, 1);
+      line-height: 20px;
+    }
+  }
+  .content {
+    // height: 50px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 18px;
+    // font-weight: lighter;
+    margin-top: 12px;
+    // overflow: scroll;
+    font-family:PingFangSC-Regular;
+  }
+  .blank {
+    text-align: right;
+    font-size: 14px;
+    color: rgba(51, 51, 51, 1);
+    padding: 10px 0;
+    padding-bottom: 0;
+  }
+}
+
+.trade-str-mark {
+  height: 3px;
+  width: 100%;
+  background: #F7F7F7;
+}
+.loading-btn{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  span{
+    display: block;
+    animation: loading 1.5s linear infinite;
+  }
+}
+@keyframes loading {
+  100%{
+    transform: rotateZ(360deg);
+  }
+}
+.no-data{
+  padding-left: 5px;
+  line-height: 20px;
+}
+
+.result-example .spe {
+  width: 50px !important;
+  height: 50px !important;
+}

@@ -1,0 +1,182 @@
+.auth {
+  font-size: 14px;
+  height: 100%;
+  overflow: hidden;
+}
+.layout-content{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+}
+li{
+  list-style: none;
+}
+@media (min-width:500px){
+  .layout-content{
+    width: 450px;
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+  }
+}
+//类的循环为5的倍数
+//margin
+@for $i from 1 through 5 {
+  .mg-#{$i * 5} {
+    margin: $i*5px;
+  }
+  ;
+  .mt-#{$i * 5} {
+    margin-top: $i*5px;
+  }
+  ;
+  .mb-#{$i * 5} {
+    margin-bottom: $i*5px;
+  }
+  ;
+  .ml-#{$i * 5} {
+    margin-left: $i*5px;
+  }
+  ;
+  .mr-#{$i * 5} {
+    margin-right: $i*5px;
+  }
+  ;
+}
+
+//padding
+@for $i from 1 through 5 {
+  .pd-#{$i * 5} {
+    padding: $i*5px;
+  }
+  .pt-#{$i * 5} {
+    padding-top: $i*5px;
+  }
+  ;
+  .pb-#{$i * 5} {
+    padding-bottom: $i*5px;
+  }
+  ;
+  .pl-#{$i * 5} {
+    padding-left: $i*5px;
+  }
+  ;
+  .pr-#{$i * 5} {
+    padding-right: $i*5px;
+  }
+  ;
+}
+
+$projectId:'_794156_wr898mylbu';
+$body-color:'#f5f5f5';
+$navbar-color:'#ec3627';
+@font-face {
+  font-family: 'iconfont';
+  /* project id 407312 */
+  src: url('//at.alicdn.com/t/font#{$projectId}.eot');
+  src: url('//at.alicdn.com/t/font#{$projectId}.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font#{$projectId}.woff') format('woff'),
+  url('//at.alicdn.com/t/font#{$projectId}.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font#{$projectId}.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+$grey:#efefef;
+$red:#ec3627;
+//0.5的线条
+@mixin size ($w,$h){
+  width: $w;
+  @if $h {
+    height: $h;
+  } @else {
+    height: $w;
+  }
+}
+@mixin bordered-common{
+  content: "";
+  display: block;
+  @include size(200%,200%);
+  position: absolute;
+  top:0;
+  left: 0;
+  transform: scale(.5);
+  transform-origin: 0 0;
+  pointer-events:none;
+}
+
+@mixin bordered{
+  display: block;
+  position: relative;
+}
+
+.bordered-all{
+  @include bordered()
+}
+.bordered-all::before{
+  @include bordered-common();
+  border: 1px #000 solid;
+}
+//全部为灰色
+.bordered-all-grey{
+  @include bordered()
+}
+// 绿色
+.bordered-all-green{
+  @include bordered()
+}
+.bordered-all-green::before{
+  @include bordered-common();
+  border: 1px #188808 solid;
+}
+.bordered-all-grey::before{
+  @include bordered-common();
+  border: 1px $grey solid;
+}
+//带圆角的
+.bordered-all-grey-radius{
+  @include bordered();  
+}
+.bordered-all-grey-radius::before{
+  @include bordered-common();
+  border: 1px $grey solid;
+  border-radius: 4px;
+}
+//下面为灰色
+.bordered-grey-bottom{
+  @include bordered()
+}
+.bordered-grey-bottom::before{
+  @include bordered-common();
+  border-bottom: 1px $grey solid;
+}
+//右边为灰色
+.bordered-grey-right{
+  @include bordered()
+}
+.bordered-grey-right::before{
+  @include bordered-common();
+  border-right: 1px $grey solid;
+}
+// 左边为灰色
+.bordered-grey-left{
+  @include bordered()
+}
+.bordered-grey-left::before{
+  @include bordered-common();
+  border-left: 1px $grey solid;
+}
+//上面为灰色
+.bordered-grey-top{
+  @include bordered()
+}
+.bordered-grey-top::before{
+  @include bordered-common();
+  border-top: 1px $grey solid;
+}

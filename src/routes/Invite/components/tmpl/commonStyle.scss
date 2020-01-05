@@ -1,0 +1,141 @@
+.welfare-content{
+  width: 95%;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px 0;
+  box-shadow:0px 3px 7px 0px rgba(0, 0, 0, 0.14);
+  .invite-content{
+    width: 100%;
+    padding: 10px;
+    color: #773BB4;
+  }
+  .invite-list-img{
+    width: 85%;
+    margin-left: 15%;
+    background-color: #F9F5FF;
+    img{
+      width: 100%;
+      height: auto;
+    }
+    margin-bottom: 10px;
+  }
+  .invite-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .invite-list-left{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .invite-list-left>span{
+    display: block;
+    height:24px ;
+    width: 24px;
+    background-color: #F2E8FF;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 100%;
+  }
+  .invite-list-right{
+    width: 85%;
+    display: flex;
+    background: #F2E8FF;
+    overflow: hidden;
+    position: relative;
+    font-size: 14px;
+  }
+  .invite-list-right .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    div{
+      width: 100%;
+    }
+  }
+  .invite-list-right>div{
+    width: 50%;
+    height: 80px;
+    text-align: center;
+    position: relative;
+  }
+  .invite-list-right .left::before,{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 10px ;
+    height: 10px;
+    background: #fff;
+    border-radius: 100%;
+    right: -5px;
+    top: -5px;
+  }
+  .invite-list-right .left::after{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 10px ;
+    height: 10px;
+    background: #fff;
+    border-radius: 100%;
+    right: -5px;
+    bottom: -5px;
+  }
+  .invite-list-right>span{
+    display: block;
+    width: 1px ;
+    border-left: 1px #fff dashed;
+    height: 80px;
+  }
+  .invite-list-right .right{
+    text-align: center;
+    line-height: 80px;
+  }
+  .invite-list-right .mark{
+    display: block;
+    position: absolute;
+    // height: 15px;
+    padding: 1px 5px;
+    background-color: #EC3627;
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 2px;
+    top: 10px;
+    right: 20%;
+
+  }
+  .invite-list-right .mark::before{
+    display: block;
+    content: '';
+    width:0;
+    height:0;
+    border-width:5px 5px 0;
+    // background-color: #EC3627;
+    border-style:solid;
+    border-color:#EC3627 transparent transparent;
+    position: absolute;
+    bottom: -5px;
+    left:- 10px;
+    right: 0;
+    margin: auto;
+    // transform: rotateZ(90deg);
+  }
+  .invite-content-title{
+    display: flex;
+    padding-left: 15%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    div{
+      width: 50%;
+      text-align: center;
+    } 
+  }
+}

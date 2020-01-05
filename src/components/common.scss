@@ -1,0 +1,23 @@
+.nav-body{
+  overflow: auto;
+  -webkit-overflow-scrolling:touch；
+}
+.layout-content{
+  height:'100%';
+  overflow:'auto';
+  background: #fff;
+  -webkit-overflow-scrolling:touch;
+  position: relative;
+}
+
+@media (min-width: 500px) {
+  .layout-content{
+    width:450px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.18);
+  }
+}
+.nav-mask{
+  color: #666;
+  font-size: 14px;
+}

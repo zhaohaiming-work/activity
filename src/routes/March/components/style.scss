@@ -1,0 +1,124 @@
+.march-container{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background:linear-gradient(0deg,rgba(242,138,49,1),rgba(242,138,49,1),rgba(236,56,58,1));
+}
+.march-img-common{
+  width: 95%;
+  margin: auto;
+  display: block;
+  height:auto;
+  margin-bottom: 20px;
+}
+.march-trade{
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+  color: #EBB025;
+  opacity: 0.8;
+}
+.march-ac-two{
+  width: 95%;
+  position: relative;
+  margin: auto;
+  >img{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 19%;
+    li{
+      width: 45%;
+      position: relative;
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+    input{
+      display: none;
+    }
+    input:checked +label{
+      opacity: 1;
+    }
+    label{
+      display: flex;
+      position: absolute;
+      width: 15%;
+      height: 19%;
+      // background: red;
+      // justify-content: center;
+      align-items: center;
+      color: #fff;
+      padding-left: 2%;
+      opacity: 0;
+    }
+  }
+  .user-news{
+    width: 100%;
+    padding: 0 2.5%;
+    position: absolute;
+    bottom: 3%;
+  }
+  @media (max-width: 320px)  {
+    .user-news{
+      bottom: 2px;
+    }
+  }
+  .list{
+    width: 100%;
+    padding: 6px 2.5%;
+    border:1px solid rgba(231,69,47,1);
+    border-radius:4px;
+    margin-bottom: 8px;
+    color: #fff;
+    display: flex;
+    align-items:flex-start;
+    span{
+      margin-right: 10px;
+    }
+    input{
+      border: none;
+      padding: 3px;
+      flex-grow: 1;
+      background: #EF6136;
+      color: #fff;
+    }
+    input.ac-3{
+      background: #EF5E55;
+    }
+    textarea{
+      border: none;
+      padding: 3px;
+      flex-grow: 1;
+      resize:none;
+      background: #EF6136;
+      color: #fff;
+    }
+  }
+  .list-center{
+    align-items:center
+  }
+  button{
+    display: block;
+    padding: 8px;
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    background: #E7452F;
+    color:rgba(255,255,255,.8);
+    border-radius: 3px;
+
+  }
+  button:active{
+    opacity: 0.8;
+  }
+}
